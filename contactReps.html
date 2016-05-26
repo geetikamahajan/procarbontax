@@ -1,0 +1,229 @@
+<html>
+<header> <title>Contact Your Local Reps </title> </header>
+<h1> <center> <font color='white'>  Contact Your Local Representative </font> </center> </h1>
+<body background = "oilspill.jpg">
+	<center> <img src="PCTlogo.jpg"> </center>
+	<table style="width:100%">
+		<tr> 
+		<td><center><button class = "buttonTab" type="button" onClick="homepage();"> HOME </button> </center></td> 
+		<center> <td><button type="button" onClick="buttonA();"> Find out more about our cause </button> </center></td>
+		<td><center><button type="button"> Issues </button> </center></td>
+		<td><center><button type="button"> Experts </button> </center></td>
+		<td><center><button type="button" onClick="buttonTwitter();"> Twitter </button> </center></td> 
+		<td><center><button type="button" onClick="buttonContactReps();"> Contact Your Local Represenative </button> </center></td> </tr>
+  </table>
+  .buttonTab {
+  color: #900;
+  background: #FF0;
+  font-weight: bold;
+  border: 1px solid #900;
+}
+ 
+.buttonTab:hover {
+  color: #FFF;
+  background: #900;
+}
+  <table style="width:100%">
+  <tr>
+    <td valign= "top" halign="middle">
+    <h2 id="selectastate"> <font color="white"> Select a State </font> </h2>
+	<div id = "menu">
+	<select id = "menuOptions" onChange="onSelection();">
+		<option> Alabama </option>
+		<option> Alaska </option>
+		<option> Arizona </option>
+		<option> Arkansas </option>
+		<option> California </option>
+		<option> Colorado </option>
+		<option> Connecticut </option>
+		<option> Delaware </option>
+		<option> Florida </option>
+		<option> Georgia </option>
+		<option> Hawaii </option>
+		<option> Idaho </option>
+		<option> Illinois </option>
+		<option> Indiana </option>
+		<option> Iowa </option>
+		<option> Kansas </option>
+		<option> Kentucky </option>
+		<option> Louisiana </option>
+		<option> Maryland </option>
+		<option> Massachusetts </option>
+		<option> Michigan </option>
+		<option> Minnesota </option>
+		<option> Mississippi </option>
+		<option> Missouri </option>
+		<option> Montana </option>
+		<option> Nebraska </option>
+		<option> Nevada </option>
+		<option> New Hampshire </option>
+		<option> New Jersey </option>
+		<option> New Mexico </option>
+		<option> New York </option>
+		<option> North Carolina </option>
+		<option> North Dakota </option>
+		<option> Ohio </option>
+		<option> Oklahoma </option>
+		<option> Oregon </option>
+		<option> Pennsylvania </option>
+		<option> Rhode Island </option>
+		<option> South Carolina </option>
+		<option> South Dakota </option>
+		<option> Tennessee </option>
+		<option> Texas </option>
+		<option> Utah </option>
+		<option> Vermont </option>
+		<option> Virginia </option>
+		<option> Washington </option>
+		<option> West Virginia </option>
+		<option> Wisconsin </option>
+		<option> Wyoming </option>
+
+	</select>
+	</div>
+	<br> <br>
+	<h2 id = "repsOfState" style="display:none"> <font color="white"> Your State's Representatives: </font> </h2>
+	<form name="Reps">
+	<div id = "divReps" style="display:none">
+	<select id = "repList" size = "10" onchange="CHOSEREP();">
+		<option value="1"> </option>
+	</select>
+	</div>
+	</form>
+	<font color="white" size= "1">website made by Geetika, Neil, Will, Arya </font>
+</td>
+    <td valign="top">
+    	<h2 id="sampleemail"> <font color="white"> Sample Email</font> </h2>
+    	<h4> <font color="white"> <h3>Dear Representative, </h3><br> <br>
+
+    	My name is [blank] and I am writing you to express my opinion on the issue of the carbon tax. I believe that the carbon tax is a prudent measure to not only improve the environment for the United States, but also to take steps towards energy self-dependence. I hope that you can support legislation implementing this policy in the future, and doing so would make me much more likely to support your future campaigns.  <br> <br>
+    	Climate change is a pressing issue for the US and the rest of the world. In 2016 at the Paris Conference on climate change President Obama agreed to cut US carbon emissions. To meet this goal, we need measures beyond burdensome executive regulation. The Supreme Court decision of February, making it more difficult for the Environmental Protection Agency (EPA) to impose new carbon emission regulations, makes alternatives to traditional controls more necessary than ever. <br> <br>
+    	A vast majority of economists believe that the carbon tax is the most efficient way to reduce carbon emissions. The carbon tax avoids the inefficiencies and redundancies that often plague regulatory agencies and the heavy costs associated with subsidies. Rather, it is a simple, yet powerful, market-based reform that empowers American businesses to make healthy changes in their business practices. <br><br>
+    	The Congressional Budget Office (CBO) estimates that a $20 tax on every metric ton of gas emissions would reduce US carbon emissions by 8% over 9 years. This is a tremendous change in carbon emissions in the United States that would mitigate climate change. Moreover, it would provide compelling incentives for businesses to utilize more sustainable energy resources that will make the United States and its businesses ready for a future powered by renewable energy rather than fossil fuels. <br><br>
+    		<br>
+
+    		<h3>Sincerely, <br>
+    		[Name] <br> </h3>
+    	</font> </h4>
+    </td>
+  </tr>
+</table>
+	
+
+	<script type='text/javascript'>
+	function buttonA(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/whoAreWe.html";
+	    a.click();
+	}
+	function buttonTwitter(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.twitter.com/procarbontax.html";
+	    a.click();
+	}
+	function buttonContactReps(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/contactReps.html";
+	    a.click();
+	}
+	function homepage(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/procarbontax.html";
+	    a.click();
+	}
+		var StatesReps = {
+"Alabama": ["Martha Roby (R) ", "Moe Brooks (R) ", "Bradley Byrne (R) ", "Robert Aderholt (R) ", "Terri Sewell (D) ", "Gary Palmer (R) ", "Michael D. Rogers (R) "], 
+"Alaska": ["Donald Young (R) "], 		
+"Arizona": ["Ann Kirkpatrick (D) ", "Kyrsten Sinema (D) ", "Martha McSally (R) ", "Raul Grijalva (D) ", "Matt Salmon (R) ", "Trent Franks (R) ", "Paul Gosar (R) ", "David Schweikert (R) ", "Ruben Galledo (D) "], 
+"Arkansas": ["Steve Womack (R) ", "French Hill (R) ", "Bruce Westerman (R) ", "Rick Crawford (R) "], 
+"California":["Nancy Pelosi (D) ", "Kevin McCarthy (R) ", "Duncan D. Hunter (R) ", "Judy Chu (D) ", "Darrell Issa (R) ", "Loretta Sanchez (D) ", "Maxine Waters (D) ", "Xavier Becerra (D) ", "Barbara Lee (D) ", "Mike Honda (D) ", "Ami Bera (D) ", "Dana Rohrabacher (D) ", "Jackie Speier (D) ", "Adam Schiff (D) ", "Ed Royce (R) ", "Mike Thompson (D) ", "Eric Swalwell (D) ", "Devin Nunes (R) ", "Mimi Walters (R) ", "Scott Peters (D) ", "Mark Takano (D) ", "Karen Bass (D) ", "Zoe Lofgren (D) ", "Linda Sanchez (D) ", "Anna Eshoo (D) ", "Susan Davis (D) ", "John Garamendi (D) ", "Janice Hahn (D) ", "Jeff Denham (R) ", "Brad Sherman (D) ", "Tom McClintock (R) ", "Jared Huffman (D) ", "Paul Cook (R) ", "Raul Ruiz (D) ", "Tony Cardenas (D) ", "Pete Aguilar (D) ", "Jim Costa (D) ", "Lois Capps (D) ", "Steve Knight (R) ", "Grace Napolitano (D) ", "Julia Brownley (D) ", "Sam Farr (D) ", "Juan Vargas (D) ", "Mark DeSaulnier (D) ", "Jerry McNerney (D) ", "Dough LaMalfa (R) ", "Lucille Roybal-Allard (D) ", "David Valadao (R) ", "Doris Matsui (D) ", "Alan Lowenthal (D) ", "Ken Calvert (R) "],
+"Colorado":["Jared Polis (D) ", "Mike Coffman (R) ", "Diana DeGette (D) ", "Ken Buck (R) ", "Scott Tipton (R) ", "Doug Lamborn (R) ", "Ed Perlmutter (D) "],
+"Connecticut":["Jim Himes (D) ", "Joe Courtney (D) ", "John B. Larson (D) ", "Rosa DeLauro (D) ", "Elizabeth Etsy (D) "],
+"Delaware":["John Carney (D) "], 
+"Florida":["Debbie Wasserman Schultz (D) ", "Alan Grayson (D) ", "Patrick Murphy (D) ", "Corrine Brown (D) ", "David Jolly (R) ", "Ileana Ros-Lehtinen (R) ", "Jeff Miller (R) ", "Gwen Graham (D) ", "Ted Deutch (D) ", "Carlos Curbelo (R) ", "Ron DeSantis (R) ", "Mario Díaz-Balart (R) ", "Alcee Hastings (D) ", "Curt Clawson (R) ", "Ted Yoho (R) ", "Kathy Castor (D) ", "Ander Crenshaw (R) ", "John Mica (R) ", "Frederica Wilson (D) ", "Gus Bilirakis (R) ", "Vern Buchanan (R) ", "Lois Frankel (D) ", "Bill Posey (R) ", "Tom Rooney (R) ", "Rich Nugent (R) ", "Daniel Webster (R) ", "Dennis A. Ross (R) "], 
+"Georgia":["John Lewis (D) ", "David Scorr (D) ", "Tom Price (R) ", "Hank Johnson (D) ", "Barry Loudermilk (R) ", "Austin Scott (R) ", "Lynn Westmoreland (R) ", "Buddy Carter (R) ", "Jody Hice (R) ", "Sanford Bishop (D) ", "Tom Graves (R) ", "Rob Woodall (R) ", "Rick Allen (R) ", "Doug Collins (R) "], 
+"Hawaii": ["Tulsi Gabbard (D) ", "Mark Takai (D) "], 
+"Idaho": ["Raul Labrador (R) ", "Mike Simpson (R) "], 
+"Illinois": ["Tammy Duckworth (D) ", "Luis Gutierrez (D) ", "Adam Kinzinger (R) ", "Bobby Rush (D) ", "Robert Dold (R) ", "Peter Roskam (R) ", "Robin Kelly (D) ", "Jan Schakowsky (D) ", "Cheri Bustos (D) ", "Bill Foster (D) ", "John Shimkus (R) ", "Rodney Davis (R) ", "Dan Lipinski (D) ", "Darin LaHood (R) ", "Mike Quigley (D) ", "Danny K. Davis (D) "], 
+"Indiana": ["Todd Young (R) ", "Marlin Stutzman (R) ", "Todd Rokita (R) ", "Susan Brooks (R) ", "Andre Carson (D) ", "Jackie Walorski (R) ", "Luke Messer (R) ", "Pete Visclosky (D) ", "Larry Bucshon (R) "], 
+"Iowa": ["Steve King (R) ", "Rob Blum (R) ", "Dave Loebsack (D) "], 
+"Kansas": ["Lynn Jenkins (R) ", "Mike Pompeo (R) ", "Kevin Yoder (R) ", "Tim Huelskamp (R) "], 
+"Kentucky": ["Hal Rogers (R) ", "Thomas Massie (R) ", "Andy Barr (R) ", "John Yarmuth (D) ", "Brett Guthrie (R) ", "Ed Whitfield (R) "], 
+"Louisiana":["Charles Boustany (R) ", "Steve Scalise (R) ", "John Fleming (R) ", "Cedric Richmond (D) ", "Garret Graves (R) ", "Ralph Abraham (R) "], 
+"Maine": ["Bruce Poliquin (R) ", "Chellie Pingree (D) "], 
+"Maryland": ["Chris Van Hollen (D) ", "Donna Edwards (D) ", "Steny Hoyer (D) ", "Elijah Cummings (D) ", "Andy Harris (R) ", "John Delaney (D) ", "John Sarbanes (D) ", "Dutch Ruppersberber (D) "], 
+"Massachusetts": ["Joseph P. Kennedy III (D) ", "Seth Moulton (D) ", "Michael E. Capuano (D) ", "Jim McGovern (D) ", "Katherine Clark (D) ", "Niki Tsongas (D) ", "Bill Keating (D) ", "Richard Neal (D) ", "Stephen F. Lynch (D) "], 
+"Michigan": ["Justin Amash (R) ", "Fred Upton (R) ", "John Conyers (D) ", "Debbie Dingell (D) ", "Candice Miller (R) ", "Dan Kildee (D) ", "Tim Walberg (R) ", "Sander Levin (D) ", "Mike Bishop (R) ", "Brenda Lawrence (D) ", "Dave Trott (R) ", "John Moolenaar (R) ", "Dan Benishek (R) ", "Bill Huizenga (R) "], 
+"Minnesota": ["Keith Ellison (D) ", "Erik Paulsen (R) ", "Rick Nolan (D) ", "Collin Peterson (D) ", "John Kline (R) ", "Betty McCollum (D) ", "Tom Emmer (R) ", "Tim Walz (D) "], 
+"Mississippi":["Bernie Thompson (D) ", "Gregg Harper (R) ", "Steven Palazzo (R) "], 
+"Missouri": ["Blaine Luetkemeyer (R) ", "Ann Wagner (R) ", "Emanuel Cleaver (D) ", "Vicky Hartzler (R) ", "Billy Long (R) ", "Sam Graves (R) ", "Lacy Clay (D) ", "Jason T. Smith (R) "], 
+"Montana": ["Ryan Zinke (R) "], 
+"Nebraska":["Brad Ashford (D) ", "Adrian Smith (R) ", "Jeff Fortenberry (R) "], 
+"Nevada": ["Joe Heck (R) ", "Mark Amodei (R) ", "Dina Titus (D) "], "New Hampshire" : ["Ann McLane Kuster (D) ", "Frank Guinta (R) "], 
+"New Jersey" : ["Chris Smith (R) ", "Rodney Frelinghuysen (R) ", "Scott Garrett (R) ", "Frank Pallone (D) ", "Bonnie Watson Coleman (D) ", "Leonard Lance (R) ", "Donald Norcross (D) ", "Frank LoBiondo (R) ", "Bill Pascrell JR. (D) ", "Albio Sires (D) ", "Tom MacArthur (R) ", "Donald Payne JR. (D)"],
+"New Mexico" : ["Michelle Lujan Grisham (D) ", "Steve Pearce (R) ", "Ben Jay Lujan (D) "],
+"New York": ["Chris Collins (R) ", "Peter T. King (R) ", "Charles Rangel (D) ", "Steve Israel (D) ", "Elise Stefanik (R) ", "Sean Patrick Maloney (D) ", "Hakeem Jeffries (D) ", "Carolyn Maloney (D) ", "Chris Gibson (R) ", "Lee Zeldin (R) ", "Nydia Velazquez (D) ", "Nita Lowey (D) ", "Elliot Engel (D) ", "Grace Meng (D) ", "Jerrold Nadler (D) ", "Louise Slaughter (D) ", "Joseph Crowley (D) ", "Tom Reed (R) ", "Kathleen Rice (D) ", "Richard L. Hanna (R) ", "John M.Katko (R) ", "Yvette Clarke (D) ", "Paul D. Tonko (D) ", "Dan Donovan (R) ", "Brian Higgins (D) ", "Gregory Meeks (D) ", "Jose E. Serrano (D)"],
+"North Carolina": ["Renee Ellmers (R) ", "Walter B. Johnson JR. (R) ", "G. K. Butterfield (D) ", "Mark Walker (R) ", "Alma Adams (D) ", "Robert Pittenger (R) ", "Virginia Foxx (R) ", "Mark Meadows (R) ", "Patrick McHenry (R) ", "Richard Hudson (R) ", "David Rouzer (R) ", "David Price (D) "],
+"North Dakota": ["Kevin Cramer (R) "],
+"Ohio": ["Jim Jordan (R) ", "Marcy Kaptur (D) ", "Tim Ryan (D) ", "David Joyce (R) ", "Mike Turner (R) ", "Steve Chabot (R) ", "Brad Wenstrup (R) ", "Marcia Fudge (D) ", "Joyce Beatty (D) ", "Pat Tiberi (R) ", "Jim Renacci (R) ", " Steve Stivers (R) ", "Bob Latta (R) ", "Bob Gibbs (R) ", "Bill Johnson (R) "],
+"Oklahoma": ["Markwayne Mullin (R) ", "Tom Cole (R) ", "Steve Russel (R) ", "Jim Bridenstine (R) ", "Frank Lucas (R) "],
+"Oregon": ["Greg Walden (R) ", "Peter DeFazio (D) ", "Earl Blumenauer (D) ", "Suzanne Bonamici (D) ", "Kurt Schrader (D) "],
+"Pennsylvania": ["Chaka Fattah (D) ", "Bill Shuster (R) ", "Tom Marino (R) ", "Mike Kelly (R) ", "Matt Cartwright (D) ", "Lou Barletta (R) ", "Timothy F. Murphy (R) ", "Charlie Dent (R) ", "Pat Meehan (R) ", "Mike Fitzpatrick (R) ", "Brendan Boyle (D) ", "Scott Perry (R) ", "Keith Rothfus (R) ", "Robert Brady (D) ", "Joe Pitts (R) ", "Glenn Thompson (R) ", "Michael F. Doyle (D) "],
+"Rhode Island": ["James Langevin (D) ", "David Cicilline (D)"],
+"South Carolina": ["Trey Gowdy (R) ", "Mark Sanford (R) ", "Jim Clyburn (D) ", "Joe Wilson (R) ", "Mick Mulvaney (R) ", "Jeff Duncan (R) "],
+"South Dakota": ["Kristi Noem (R) "],
+"Tennessee": ["Scott DesJarlais (R) ", "Diane Black (R) ", "Jim Cooper (D) ", "Chuck Fleischmann (R) ", "Phil Roe (R) ", "Jimmy Duncan (R) ", "Stephen Fincher (R) ", "Steve Cohen (D)"],
+"Texas": ["Louie Gohmert (R) ", "Sheila Jackson Lee (D) ", "Joaquin Castro (D) ", "Lamar S. Smith (R) ", "Kevin Brady (R) ", "Pete Sessions (R) ", "Joe Barton (R) ", "Michael McCaul (R) ", "Sam Johnson (R) ", "Mac Thornberry (R) ", "Will Hurd (R) ", "John Culberson (R) ", "Beto O'Rourke (D) ", "Gene Green (D) ", "Eddie Bernice Johnson (D) ", "Ted Poe (R) ", "Michael C. Burgess (R) ", "Henry Cuellar (D) ", "Blake Farenthold (R) ", "Ruben Hinojosa (D) ", "Lloyd Doggett (D) ", "Jeb Hensarling (R) ", "Pete Olson (R) ", "John Ratcliffe (R) ", "Kay Granger (R) ", "Randy Neugebauer (R) ", "Mike Conaway (R) ", "Marc Veasey (D) ", "Bill Flores (R) ", "Kenny Marchant (R) ", "Randy Weber (R) ", "Filemon Vela JR. (D) ", "John Carter (R) ", "Roger Williams (R) ", "Al Green (D)"],
+"Utah": ["Mia Love (R) ", "Rob Bishop (R) ", "Chris Stewart (R) ", "Jason Chaffetz (R) "],
+"Vermont": ["Peter Welch (D) "],
+"Virginia": ["Barbara Comstock (R) ", "Dave Brat (R) ", "Scott Rigell (R) ", "Bob Goodlatte (R) ", "Gerry Connolly (D) ", "Randy Forbes (R) ", "Don Beyer (D) ", "Rob Wittman (R) ", "Bobby Scott (D) ", "Robert Hurt (R) ", "Morgan Griffith (R) "],
+"Washington": ["Cathy McMorris Rodgers (R) ", "Rick Larsen (D) ", "Jim McDermott (D) ", "Jaime Herrera Beutler (R) ", "Suzan DelBene (D) ", "Derek Kilmer (D) ", "Dave Reichert (R) ", "Dennis Heck (D) ", "Dan Newhouse (R) ", "Adam Smith (D) "],
+		"West Virginia": ["Alex Mooney (R) ", "David McKinley (R) ", "Evan Jenkins (R) "],
+		"Wisconsin": ["Paul Ryan (R) ", "Sean Duffy (R) ", "Glenn Grothman (R) ", "Jim Sensenbrenner (R) ", "Mark Pocan (D) ", "Reid Ribble (R) ", "Ron Kind (R) ", "Gwen Moore (D) "],		
+"Wyoming": ["Cynthia Lummis (R) "]
+		
+		};
+
+	var repsContactLinks = {"Barbara Comstock (R) ":"https://comstockforms.house.gov/contact/", "Dave Brat (R) ":"https://brat.house.gov/contact/", "Scott Rigell (R) ":"http://rigell.house.gov/contact/new/", "Bob Goodlatte (R) ":"http://goodlatte.house.gov/contacts/new", "Gerry Connolly (D) ":"https://connolly.house.gov/index.cfm?sectionid=132", "Randy Forbes (R) ":"http://forbes.house.gov/contact/zipauth.htm", "Don Beyer (D) ":"https://beyer.house.gov/contact/", "Rob Wittman (R) ":"http://wittman.house.gov/contact/", "Bobby Scott (D) ":"https://bobbyscott.house.gov/contact/email-me", "Robert Hurt (R) ":"https://hurt.house.gov/index.cfm/email-me", "Morgan Griffith (R) ":"https://morgangriffith.house.gov/contact/contactform.htm"};
+
+		var STATE = "";
+		function onSelection(){
+			var selected = document.getElementById('menuOptions');
+			document.getElementById('repsOfState').style.display = 'block';
+			var item = selected.options[selected.selectedIndex].text;
+			hasChosen(item); //item is state name
+			STATE = item;
+		}
+
+		function CHOSEREP(){
+			var INDEXOFREP = document.getElementById("repList").selectedIndex;
+			var Representativesofthestate = StatesReps[STATE];
+			var chosenRepresentativeName = Representativesofthestate[INDEXOFREP];
+			if (window.confirm('If you click "ok" you would be redirected . Cancel will load this website ')) 
+			{
+				window.location.href=repsContactLinks[chosenRepresentativeName];
+			}
+
+		}
+
+
+		function hasChosen(item){
+			var rep = StatesReps[item];
+			var numOfReps = rep.length;
+			document.getElementById('divReps').style.display = 'block';
+			var num = 0;
+			document.Reps.repList.options.length=0;
+			for(i = 0; i < numOfReps; i++){
+				num = i+1;
+				document.Reps.repList.options[i]=new Option(rep[i], num.toString());
+			}
+		}
+
+	</script>
+	
+</body>
+</html>

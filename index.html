@@ -1,0 +1,64 @@
+<html>
+<header> <title>Pro Carbon Tax </title> </header>
+<body background = "oilspill.jpg">
+	<center> <img src="PCTlogo.jpg"> </center>
+	<table style="width:100%">
+		<tr> 
+		<td><center><button class = "buttonTAB" type="button" onClick="homepage();"> HOME </button> </center></td> 
+		<center> <td><button type="button" onClick="buttonA();"> Find out more about our cause </button> </center></td>
+		<td><center><button type="button"> Issues </button> </center></td>
+		<td><center><button type="button"> Experts </button> </center></td>
+		<td><center><button type="button" onClick="buttonTwitter();"> Twitter </button> </center></td> 
+		<td><center><button type="button" onClick="buttonContactReps();"> Contact Your Local Represenative </button> </center></td> </tr>
+  </table>
+  <style>
+
+.buttonTAB {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.buttonTAB:hover {
+    background-color: white;
+    color: green;
+}
+</style>
+  <script type='text/javascript'>
+	function buttonA(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/whoAreWe.html";
+	    a.click();
+	}
+	function buttonTwitter(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.twitter.com/procarbontax.html";
+	    a.click();
+	}
+	function buttonContactReps(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/contactReps.html";
+	    a.click();
+	}
+	function homepage(){
+		var a = document.createElement("a");
+	    a.target = "_blank";
+	    a.href = "http://www.tjhsst.edu/~2016gmahajan/procarbontax.html";
+	    a.click();
+	}
+
+</script>
+</body>
+</html>
