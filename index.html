@@ -1,4 +1,16 @@
 <html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() {
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(2000)
+    .end()
+    .appendTo('#slideshow');
+}, 3000);
+</script>
 <header> <title>Pro Carbon Tax </title> </header>
 <body background = "PCTbackground.jpg">
 	<center> <img src="PCTlogo.jpg"> </center>
@@ -14,10 +26,13 @@
 
   <div id="slideshow">
    <div>
-     <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+     <img src="http://paulmarique.be/dropbox/img/01.jpg">
    </div>
    <div>
-     <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+     <img src="http://paulmarique.be/dropbox/img/02.jpg">
+   </div>
+   <div id="sampletext"> 
+     WORKING WITH</br>TEXT TOO.
    </div>
 </div>
   <style>
@@ -42,22 +57,23 @@
     color: green;
 }
 
-#slideshow { 
-    margin: 50px auto; 
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+#sampletext {
+  position: absolute; 
+  font : italic bold 60px arial;
+  color : #aaaaaa;
+  margin-top : 200px;
 }
+
 
 #slideshow > div { 
     position: absolute; 
-    top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px; 
+    top: 0px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 0px; 
 }
+
+
 </style>
   <script type='text/javascript'>
 
