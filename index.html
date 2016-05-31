@@ -1,17 +1,4 @@
 <html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js">
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() {
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(2000)
-    .end()
-    .appendTo('#slideshow');
-}, 3000);
-
-</script>
 <header> <title>Pro Carbon Tax </title> </header>
 <body background = "PCTbackground.jpg">
 	<center> <img src="PCTlogo.jpg"> </center>
@@ -25,17 +12,13 @@ setInterval(function() {
 		<td><center><a class="buttonTAB" type="button" href="contactReps.html"> Contact Your Local Represenative </a> </center></td> </tr>
   </table>
 
-  <div id="slideshow">
-   <div>
-     <img src="http://paulmarique.be/dropbox/img/01.jpg">
-   </div>
-   <div>
-     <img src="http://paulmarique.be/dropbox/img/02.jpg">
-   </div>
-   <div id="sampletext"> 
-     WORKING WITH</br>TEXT TOO.
-   </div>
-</div>
+  <div id="imgGallery" class="container">
+        <img src="http://www.examiningcalvinism.com/kingdavid.jpg" alt="" width="100%" height="300" />
+        <img src="http://www.kingjamesbibleonline.org/1611-Bible/1611-King-James-Bible-Introduction.jpg" alt="" width="100%" height="300" />
+        <img src="http://biblestudyoutlines.org/wp-content/uploads/2012/07/the-triump-of-david-over-king-hadadezer-of-zobah-1024x729.jpg" alt="" width="100%" height="300" />
+        <img src="http://www.cgu.edu/Images/news/Flame%20Winter12/KJV-BibleBW.jpg" alt="" width="100%" height="300" />
+    </div>
+  
   <style>
 
 .buttonTAB {
@@ -58,28 +41,35 @@ setInterval(function() {
     color: green;
 }
 
-body {
-  background-color: #e7e7e7;
-  text-align: center;
+.container{
+    position:relative;
+    width:100%;
+    height:300px;
+    border-radius:5px;
+    border:1px solid red;
+    overflow:hidden;
 }
-
-#sampletext {
-  position: absolute;
-  font: italic bold 60px arial;
-  color: #aaaaaa;
-  margin-top: 200px;
-}
-
-#slideshow > div {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-}
-
 
 </style>
+<script>
+(function(){
+        var imgLen = document.getElementById('imgGallery');
+        var images = imgLen.getElementsByTagName('img');
+        var counter = 1;
+
+        if(counter <= images.length){
+            setInterval(function(){
+                images[0].src = images[counter].src;
+                console.log(images[counter].src);
+                counter++;
+
+                if(counter === images.length){
+                    counter = 1;
+                }
+            },4000);
+        }
+})();
+</script>
   <script type='text/javascript'>
 
 </script>
