@@ -57,9 +57,9 @@
 (function(){
         var imgLen = document.getElementById('imgGallery');
         var images = imgLen.getElementsByTagName('img');
-        var counter = 1;
+        var counter = 0;
 
-        if(counter <= images.length){
+        if(counter <= 7){
             setInterval(function(){
                 images[0].src = images[counter].src;
                 console.log(images[counter].src);
